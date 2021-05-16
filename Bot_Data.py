@@ -1,2 +1,2 @@
-Bot_Token='ODM5MTY2MTQ0MzkyMzMxMjg1.YJFsXw.Nx67X-rR_knpkBhAetZyAqDPJwc'
-Channel_Token=822517768510898267
+Bot_Token=''
+Channel_Token=
