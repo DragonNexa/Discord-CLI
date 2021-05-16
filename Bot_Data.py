@@ -1,2 +1,2 @@
-Bot_Token='Your Bot Token'
-Channel_Token=Your Channel ID
+Bot_Token='ODM5MTY2MTQ0MzkyMzMxMjg1.YJFsXw.Nx67X-rR_knpkBhAetZyAqDPJwc'
+Channel_Token=822517768510898267
