@@ -34,8 +34,12 @@ async def on_ready():
 
             if(com=="help"):
                 print("push <link> \t\t-> it will push the link in the default channel\nshow \t\t\t-> it will show the last 10 links shared in the default channel\nshow <channel id> \t-> it will show the last 10 links shared in the input channel\nquit \t\t\t-> stop the command inputs")
+            
             if(com=="push"):
-                await channel.send(inp[2])
+                send_msg=""
+                for i in range(2,len(inp)):
+                    send_msg+=inp[i]+" "
+                await channel.send(send_msg)
 
             elif(com=="quit"):
                 exit_cond=False
@@ -65,7 +69,9 @@ async def on_ready():
                 for i in range(0, len(links)):
                     desc+=str(i+1)+". "+links[i]+"\n"
                 output=discord.Embed(title= "Last 10 links shared:\n", description= desc, colour=discord.Colour.dark_gold())
-                
+                print(" ")
+                print(desc)
+                print(" ")
                 await channel.send(embed=output)
 
                 
